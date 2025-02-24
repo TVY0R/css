@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development</title>
+    <link rel="stylesheet" href="figma.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <div class="text-section">
+        <img src="Logo.png" alt="Company Logo" class="logo">
+        <h2>Welcome to Our Platform</h2>
+        <p>Join us today and take your first step towards something amazing.</p>
+    </div>
+    
+        <!-- Form Section -->
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group password-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                    <span class="toggle-password" onclick="togglePassword()">👁</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Select Your Role</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit">Register</button>
+
+                <p class="terms">
+                    By signing up, you agree to our <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
